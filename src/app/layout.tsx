@@ -1,10 +1,14 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Roboto_Mono } from 'next/font/google'
 import './globals.scss'
 import { Header } from '@/components/Header/Header'
 import { Footer } from '@/components/Footer/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const robotoMono = Roboto_Mono({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+  style: ['normal'],
+})
 
 export const metadata: Metadata = {
   title: 'Next gallery',
@@ -18,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={robotoMono.className}>
         <Header />
         <main>{children}</main>
         <Footer />
