@@ -32,7 +32,8 @@
     background-color: $placeholder-background-color;
     transition-duration: $effect-duration;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: $background-color;
     }
   }

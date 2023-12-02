@@ -12,7 +12,9 @@ $desktop-padding-inline: 20px;
 $min-tablet-width: 640px;
 $min-desktop-width: 1200px;
 
-$input-box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
+$input-box-shadow:
+  rgba(0, 0, 0, 0.05) 0 6px 24px 0,
+  rgba(0, 0, 0, 0.08) 0 0 0 1px;
 $container-box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 
 $effect-duration: 0.3s;

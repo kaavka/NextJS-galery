@@ -1,4 +1,4 @@
-@import "src/utils/variables";
+@import 'src/utils/variables';
 
 .details {
   display: flex;
@@ -16,7 +16,7 @@
     }
 
     &__value {
-      color: $small-faded-text-color
+      color: $small-faded-text-color;
     }
   }
 }

@@ -39,47 +39,47 @@ The `Photo` page is a Next.js component designed to display detailed information
 
 ## Scripts
 
-| Script   | Description                   |
-| -------- | ----------------------------- |
-| dev      | Start the development server. |
-| build    | Build the project for production. |
-| start    | Start the production server.  |
-| lint     | Lint the project using ESLint. |
-| format   | Format the code using Prettier. |
+| Script | Description                       |
+| ------ | --------------------------------- |
+| dev    | Start the development server.     |
+| build  | Build the project for production. |
+| start  | Start the production server.      |
+| lint   | Lint the project using ESLint.    |
+| format | Format the code using Prettier.   |
 
 ## Dependencies
 
-| Dependency                   | Description                         |
-| ---------------------------- | ----------------------------------- |
-| @fortawesome/fontawesome-free | Icon library for font icons.         |
-| @fortawesome/react-fontawesome| React component for Font Awesome icons.|
-| classnames                   | Utility for conditionally joining class names. |
-| next                         | Framework for building React applications. |
-| plaiceholder                 | Library for generating blurred image placeholders. |
-| react                        | JavaScript library for building user interfaces. |
-| react-dom                    | React's entry point for the DOM rendering. |
-| react-loading-skeleton        | Skeleton loader for loading content. |
-| sharp                        | High-performance image processing library. |
-| uuid                         | Library for generating unique identifiers. |
+| Dependency                     | Description                                        |
+| ------------------------------ | -------------------------------------------------- |
+| @fortawesome/fontawesome-free  | Icon library for font icons.                       |
+| @fortawesome/react-fontawesome | React component for Font Awesome icons.            |
+| classnames                     | Utility for conditionally joining class names.     |
+| next                           | Framework for building React applications.         |
+| plaiceholder                   | Library for generating blurred image placeholders. |
+| react                          | JavaScript library for building user interfaces.   |
+| react-dom                      | React's entry point for the DOM rendering.         |
+| react-loading-skeleton         | Skeleton loader for loading content.               |
+| sharp                          | High-performance image processing library.         |
+| uuid                           | Library for generating unique identifiers.         |
 
 ## Development Dependencies
 
-| Dependency                  | Description                               |
-| --------------------------- | ----------------------------------------- |
-| @types/node                 | TypeScript type definitions for Node.js.  |
-| @types/react                | TypeScript type definitions for React.    |
-| @types/react-dom            | TypeScript type definitions for React DOM. |
-| @types/uuid                 | TypeScript type definitions for the uuid library. |
-| eslint                      | Linting tool for JavaScript.               |
-| eslint-config-next          | Linting rules for Next.js applications.   |
-| eslint-config-prettier      | ESLint plugin to integrate Prettier.      |
-| eslint-plugin-prettier      | ESLint plugin to use Prettier for code formatting. |
-| prettier                    | Code formatter for consistent code styling. |
-| sass                        | CSS preprocessor for styling.              |
-| stylelint                   | Linting tool for CSS.                      |
-| stylelint-config-standard   | Default stylelint configuration.           |
-| stylelint-config-standard-scss | Standard stylelint configuration for SCSS. |
-| typescript                  | TypeScript compiler.                      |
+| Dependency                     | Description                                        |
+| ------------------------------ | -------------------------------------------------- |
+| @types/node                    | TypeScript type definitions for Node.js.           |
+| @types/react                   | TypeScript type definitions for React.             |
+| @types/react-dom               | TypeScript type definitions for React DOM.         |
+| @types/uuid                    | TypeScript type definitions for the uuid library.  |
+| eslint                         | Linting tool for JavaScript.                       |
+| eslint-config-next             | Linting rules for Next.js applications.            |
+| eslint-config-prettier         | ESLint plugin to integrate Prettier.               |
+| eslint-plugin-prettier         | ESLint plugin to use Prettier for code formatting. |
+| prettier                       | Code formatter for consistent code styling.        |
+| sass                           | CSS preprocessor for styling.                      |
+| stylelint                      | Linting tool for CSS.                              |
+| stylelint-config-standard      | Default stylelint configuration.                   |
+| stylelint-config-standard-scss | Standard stylelint configuration for SCSS.         |
+| typescript                     | TypeScript compiler.                               |
 
 ## Deploy on Vercel
 

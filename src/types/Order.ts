@@ -1,1 +1,1 @@
-export type Order = 'latest' | 'oldest' | 'popular';
+export type Order = 'latest' | 'oldest' | 'popular'

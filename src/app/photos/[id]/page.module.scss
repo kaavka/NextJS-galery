@@ -1,5 +1,5 @@
-@import "src/utils/variables";
-@import "src/utils/mixins";
+@import 'src/utils/variables';
+@import 'src/utils/mixins';
 
 .page {
   padding: $mobile-padding-inline;
@@ -15,6 +15,6 @@
   &__tags {
     display: flex;
     flex-wrap: wrap;
-    gap: $columns-gap-small
+    gap: $columns-gap-small;
   }
 }
