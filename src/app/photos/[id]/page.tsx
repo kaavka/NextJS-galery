@@ -34,7 +34,7 @@ export default async function Page({ params, searchParams }: Props) {
         }}
       >
         <div className={style.page__image}>
-          <BigImage url={urls.full} description={description} />
+          <BigImage url={urls.regular} description={description} />
         </div>
         <div className={style.page__details}>
           <Details details={details} />
