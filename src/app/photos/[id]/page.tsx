@@ -30,7 +30,12 @@ export default async function Page({ params, searchParams }: Props) {
 
   return (
     <>
-      <section className={style.page}>
+      <section
+        className={style.page}
+        style={{
+          background: `radial-gradient(circle at center top, ${color}, #fff)`,
+        }}
+      >
         <div className={style.page__image}>
           <BigImage
             url={urls.full}

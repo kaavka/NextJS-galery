@@ -1,33 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Next Galery
+Overview
+next-galery is a Next.js project for building a beautiful image gallery using the Unsplash API. It leverages modern web technologies, such as React for the frontend, Next.js for server-side rendering, and various tools for styling and image optimization.
 
-## Getting Started
+Installation
+Clone the repository:
 
-First, run the development server:
+bash
+Copy code
+git clone https://github.com/your-username/next-galery.git
+cd next-galery
+Install dependencies:
 
-```bash
+bash
+Copy code
+npm install
+Run the development server:
+
+bash
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Visit http://localhost:3000 in your browser to see the gallery in action.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+RootLayout
+The RootLayout component serves as the foundational layout for my Next.js application. It includes the application's metadata, global styles, and the Header and Footer components.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Header
+The Header component consists of three sections: logo, search bar, and navigation bar. It is in stiky position and transparent so it could be always accessible for user but dont prevent him form enjoying the pics.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Footer
+The Footer component displays a simple footer with the Unsplash logo, a title, and links to various sections.
 
-## Learn More
+Photos Page
+The Photos page is a Next.js component that displays a collection of photos fetched from the Unsplash API. It provides features for pagination, dynamic column layouts, and search functionality.
 
-To learn more about Next.js, take a look at the following resources:
+Features
+Dynamic Column Layout: The page supports both three and five columns per page, providing a visually appealing grid layout for images.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Search Functionality: Users can perform searches based on a query parameter, enhancing the user experience by allowing them to find specific photos.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Pagination: The component includes a pagination feature, allowing users to navigate through multiple pages of photo results.
+
+Photo Page
+The Photo page is a Next.js component designed to display detailed information about a specific photo fetched from the Unsplash API. It provides an immersive experience by showcasing the full-sized image, along with details such as downloads, likes, and associated tags.
+
+Features
+Full-Sized Image: Displays the high-resolution version of the photo using the BigImage component.
+
+Details Section: Presents key details about the photo, including the number of downloads, likes, author information, and a description.
+
+Tag Section: Lists tags associated with the photo, providing additional context and search functionality.
+
+Color Information: Retrieves and utilizes color information from the Unsplash API to enhance the visual presentation.
+
+Scripts
+dev: Start the development server.
+build: Build the project for production.
+start: Start the production server.
+lint: Lint the project using ESLint.
+format: Format the code using Prettier.
+Dependencies
+@fortawesome/fontawesome-free: Icon library for font icons.
+@fortawesome/react-fontawesome: React component for Font Awesome icons.
+classnames: Utility for conditionally joining class names.
+next: Framework for building React applications.
+plaiceholder: Library for generating blurred image placeholders.
+react: JavaScript library for building user interfaces.
+react-dom: React's entry point for the DOM rendering.
+react-loading-skeleton: Skeleton loader for loading content.
+sharp: High-performance image processing library.
+uuid: Library for generating unique identifiers.
+Development Dependencies
+@types/node, @types/react, @types/react-dom: TypeScript type definitions.
+@types/uuid: Type definitions for the uuid library.
+eslint, eslint-config-next: Linting tools for maintaining code quality.
+eslint-config-prettier, eslint-plugin-prettier: ESLint and Prettier integration.
+prettier: Code formatter for consistent code styling.
+sass: CSS preprocessor for styling.
+stylelint, stylelint-config-standard, stylelint-config-standard-scss: Linting tools for maintaining style consistency.
+typescript: TypeScript for static typing.
 
 ## Deploy on Vercel
 
