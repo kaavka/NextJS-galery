@@ -55,11 +55,8 @@ The `Photo` page is a Next.js component designed to display detailed information
 | @fortawesome/react-fontawesome | React component for Font Awesome icons.            |
 | classnames                     | Utility for conditionally joining class names.     |
 | next                           | Framework for building React applications.         |
-| plaiceholder                   | Library for generating blurred image placeholders. |
 | react                          | JavaScript library for building user interfaces.   |
 | react-dom                      | React's entry point for the DOM rendering.         |
-| react-loading-skeleton         | Skeleton loader for loading content.               |
-| sharp                          | High-performance image processing library.         |
 | uuid                           | Library for generating unique identifiers.         |
 
 ## Development Dependencies

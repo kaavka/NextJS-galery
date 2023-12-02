@@ -3,10 +3,9 @@ import Image from 'next/image'
 interface Props {
   url: string
   description: string
-  blurData: string
 }
 
-export async function BigImage({ url, description, blurData }: Props) {
+export async function BigImage({ url, description }: Props) {
   return (
     <div className={style.container}>
       <Image
@@ -15,8 +14,6 @@ export async function BigImage({ url, description, blurData }: Props) {
         width={600}
         height={600}
         sizes="100vw"
-        placeholder={'blur'}
-        blurDataURL={blurData}
         className={style.container__img}
       />
     </div>
