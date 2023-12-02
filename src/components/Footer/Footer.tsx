@@ -1,15 +1,19 @@
 import style from './Footer.module.scss'
+import { FOOTER_LINKS } from '@/utils/constants'
+import linkModule from '@/modules/link.module.scss'
+import Link from 'next/link'
 
 export function Footer() {
   return (
-    <footer autoCapitalize={'sentences'} className={style.footer}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque leo
-      ipsum, cursus quis volutpat nec, pharetra vitae arcu. Nullam scelerisque
-      convallis venenatis. Sed quis dignissim nisl, nec efficitur lectus. Nunc
-      placerat nisi turpis, consequat feugiat tortor scelerisque vitae. Etiam
-      quam nisl, tincidunt vitae molestie dictum, venenatis a nunc. Quisque
-      vitae libero aliquam, fermentum sem vel, dictum leo. Pellentesque tempus
-      rhoncus sapien id tristique.
+    <footer className={style.footer}>
+      <h1 className={style.footer__title}>Unsplash</h1>
+      <div className={style.footer__links}>
+        {FOOTER_LINKS.map(({ url, label }) => (
+          <Link href={url} key={label} className={linkModule.link}>
+            {label}
+          </Link>
+        ))}
+      </div>
     </footer>
   )
 }

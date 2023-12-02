@@ -1,0 +1,28 @@
+@import 'src/utils/variables';
+@import 'src/utils/mixins';
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $columns-gap;
+  padding: $mobile-padding-inline;
+  box-shadow: $container-box-shadow;
+  height: fit-content;
+  transition-duration: $effect-duration;
+
+  &:hover {
+    background-color: $background-color;
+  }
+
+  &__logo {
+    align-self: flex-start;
+  }
+
+  &__search {
+    width: 100%;
+  }
+}

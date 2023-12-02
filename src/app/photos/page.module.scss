@@ -1,0 +1,36 @@
+@import 'src/utils/variables';
+@import 'src/utils/mixins';
+
+
+.page {
+  width: 100%;
+  row-gap: $columns-gap;
+  padding: $mobile-padding-inline;
+  transition-duration: $effect-duration;
+
+  @include onTablet {
+    padding: $tablet-padding-inline;
+  }
+
+  @include onDesktop {
+    max-width: 1200px;
+    padding-inline: 0;
+    margin: 0 auto;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1 / -1;
+  }
+
+  &__list {
+    grid-column: span 1;
+  }
+
+  &__pagination {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+  }
+}

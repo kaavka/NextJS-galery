@@ -1,0 +1,14 @@
+@import "src/utils/variables";
+
+.tag {
+  display: inline-block;
+  padding: $tag-padding;
+  border-radius: 5px;
+  background-color: $tag-background-color;
+  transition-duration: $effect-duration;
+
+  &:hover {
+    background-color: $tag-background-color-hover;
+    color: $tag-text-color-hover;
+  }
+}

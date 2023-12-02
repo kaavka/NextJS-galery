@@ -1,23 +1,17 @@
 @import 'src/utils/mixins.scss';
 @import 'src/utils/variables';
 
-.template {
+%base-grid {
   display: grid;
-  padding-inline: $columns-gap;
-  justify-content: space-around;
   grid-column-gap: $columns-gap;
+}
 
-  @include onTablet {
-    grid-template-columns: repeat($tablet-columns-quantity, 1fr);
-    padding-inline: 24px;
-  }
+.template_three {
+  @extend %base-grid;
+  grid-template-columns: repeat($columns-quantity-small, minmax(50px, 33%));
+}
 
-  @include onDesktop {
-    margin: 0 auto;
-    padding-inline: 0;
-    grid-template-columns: repeat(
-      $desktop-columns-quantity,
-      $desktop-columns-width
-    );
-  }
+.template_five {
+  @extend %base-grid;
+  grid-template-columns: repeat($columns-quantity-big, minmax(50px, 33%));
 }

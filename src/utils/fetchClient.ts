@@ -1,7 +1,11 @@
 const applicationId = process.env.APPLICATION_ID
 const accessKey = process.env.ACCESS_KEY
 const secretKey = process.env.SECRET_KEY
-const baseUrl = process.env.BASE_UR
+const baseUrl = process.env.BASE_URL
+
+if (!applicationId || !accessKey || !secretKey || !baseUrl) {
+  throw new Error('One or more required environment variables are missing.')
+}
 
 type RequestMethod = 'GET' | 'POST' | 'PATCH' | 'DELETE'
 
@@ -10,6 +14,9 @@ async function request<T>(
   method: RequestMethod = 'GET',
   data: any = null
 ): Promise<T> {
+  const url = new URL(baseUrl + query)
+  url.searchParams.append('client_id', accessKey as string)
+
   const options: RequestInit = { method }
   options.headers = {
     'Accept-Version': 'v1',
@@ -17,19 +24,16 @@ async function request<T>(
 
   if (data) {
     options.body = JSON.stringify(data)
-    options.headers = {
-      ...options.headers,
-      'Content-Type': 'application/json; charset=UTF-8',
-    }
+    options.headers['Content-Type'] = 'application/json; charset=UTF-8'
   }
 
-  const URL = `${baseUrl + query}client_id=${accessKey}`
-
   try {
-    const response = await fetch(URL, options)
+    const response = await fetch(url.toString(), options)
 
     if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`)
+      throw new Error(
+        `HTTP error! Status: ${response.status}, Message: ${response.statusText}`
+      )
     }
 
     const responseData: T = await response.json()

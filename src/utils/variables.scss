@@ -1,25 +1,36 @@
-$tablet-columns-quantity: 2;
-$desktop-columns-quantity: 3;
+$columns-quantity-small: 3;
+$columns-quantity-big: 5;
 $desktop-columns-width: 32px;
+$columns-gap-small: 6px;
 $columns-gap: 16px;
+$header-elements-size: 25px;
+
 $mobile-padding-inline: 12px;
 $tablet-padding-inline: 16px;
 $desktop-padding-inline: 20px;
+
+$min-tablet-width: 640px;
+$min-desktop-width: 1200px;
+
+$input-box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
+$container-box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 
 $effect-duration: 0.3s;
 
 $accent-weight: 700;
 $semi-accent-weight: 600;
 $regular-weight: 500;
+
 $background-color: #fff;
-$button-primary-background-color: #111;
-$button-primary-text-color: #fff;
-$faded-text-color: #d1d1d1;
-$form-input-radio-button-border-color: #d1d1d1;
-$form-input-radio-button-checked-border-color: #007fff;
-$form-input-radio-button-checked-dot-color: #007fff;
+
 $link-text-color-hover: #111;
 $link-text-color: #767676;
+
+$tag-padding: 5px;
+$tag-text-color-hover: #fff;
+$tag-background-color: #0000000d;
+$tag-background-color-hover: #111;
+
 $placeholder-background-color: #0000000d;
 $small-faded-text-color: #767676;
 $text-color: #111;

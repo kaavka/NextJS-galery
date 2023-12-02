@@ -1,11 +1,13 @@
+@import 'src/utils/variables';
+
 @mixin onTablet {
-  @media (min-width: 640px) {
+  @media (min-width: $min-tablet-width) {
     @content;
   }
 }
 
 @mixin onDesktop {
-  @media (min-width: 1200px) {
+  @media (min-width: $min-desktop-width) {
     @content;
   }
 }

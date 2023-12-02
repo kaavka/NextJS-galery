@@ -1,0 +1,10 @@
+@import 'src/utils/variables';
+
+.link {
+  color: $link-text-color;
+  transition-duration: $effect-duration;
+
+  &:hover {
+    color: $link-text-color-hover;
+  }
+}

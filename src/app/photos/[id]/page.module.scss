@@ -1,0 +1,20 @@
+@import "src/utils/variables";
+@import "src/utils/mixins";
+
+.page {
+  padding: $mobile-padding-inline;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__image {
+    margin: 0 auto $mobile-padding-inline;
+    max-width: 90%;
+  }
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $columns-gap-small
+  }
+}

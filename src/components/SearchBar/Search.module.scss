@@ -1,5 +1,39 @@
-.search {
-  &__input {
+@import 'src/utils/variables';
+@import 'src/utils/mixins';
 
+.search {
+  $padding-left: 40px;
+
+  position: relative;
+
+  &__icon_glass {
+    position: absolute;
+    left: calc($padding-left - 30px);
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  &__icon_clear {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  &__input {
+    padding-left: $padding-left;
+    border-radius: 20px;
+    height: $header-elements-size;
+    width: 100%;
+    border: none;
+    box-shadow: $input-box-shadow;
+    background-color: $placeholder-background-color;
+    transition-duration: $effect-duration;
+
+    &:hover, &:focus {
+      background-color: $background-color;
+    }
   }
 }

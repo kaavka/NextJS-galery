@@ -1,4 +1,22 @@
+@import 'src/utils/variables';
+
 .footer {
   position: sticky;
   top: 100%;
+  padding: $mobile-padding-inline;
+  box-shadow: $container-box-shadow;
+  overflow-wrap: normal;
+
+  &__title {
+    font-weight: 600;
+    padding-bottom: 20px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: $columns-gap-small;
+    flex-wrap: wrap;
+    max-height: 100px;
+  }
 }
